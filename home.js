@@ -122,24 +122,26 @@ let sketch = function(p) {
 
   p.draw = function() {
 
-home = p.image(pic4, 30, 950, 90, 90);
-nucleo = p.image(pic11, 160, 950, 90, 90);
-attivita = p.image(pic7, 290, 950, 90, 90)
+home = p.image(pic4, 30, 900, 90, 90);
+nucleo = p.image(pic11, 160, 900, 90, 90);
+attivita = p.image(pic7, 290, 900, 90, 90);
+
+
+p.textFont(myFont);
+p.textSize(40);
+p.fill('white');
 
 nome = p.text('SILVIA', 30, 50)
-p.textFont(myFont);
-p.textSize(40);
-p.fill('white')
 
 data = p.text('30/11/2020', 2100, 50);
-p.textFont(myFont);
-p.textSize(40);
-p.fill('white')
 
 indicatore = p.text('HOME', 2180, 1025);
-p.textFont(myFont);
-p.textSize(40);
-p.fill('white')
+
+p.textSize(24);
+
+picto1 = p.text('Home', 40, 1025);
+picto2 = p.text('Nucleo', 165, 1025);
+picto3 = p.text('Attività', 295, 1025);
 
 
   }
