@@ -26,7 +26,48 @@ function preload() {
 
 function setup() {
 frameRate(600);
+
+picto1 = createButton('');
+picto1.position(30, 900);
+picto1.style('background-color', 'transparent');
+// picto1.style('border-style','solid' );
+// picto1.style('border-color', 'white');
+// picto1.style('border-width', '2px');
+picto1.style("width", "100px");
+picto1.style('height', '130px');
+picto1.style('border', 'none');
+
+
+picto2 = createButton('');
+picto2.position(155, 900);
+picto2.style('background-color', 'transparent');
+// picto2.style('border-style','solid' );
+// picto2.style('border-color', 'white');
+// picto2.style('border-width', '2px');
+picto2.style("width", "100px");
+picto2.style('height', '130px')
+picto2.style('border', 'none');
+
+
+picto3 = createButton('');
+picto3.position(285, 900);
+picto3.style('background-color', 'transparent');
+// picto3.style('border-style','solid' );
+// picto3.style('border-color', 'white');
+// picto3.style('border-width', '2px');
+picto3.style("width", "100px");
+picto3.style('height', '130px')
+picto3.style('border', 'none');
+
+
+
 }
+
+
+
+
+
+
 
 function draw() {
   // var canvas1 = createCanvas(windowWidth, windowHeight);
