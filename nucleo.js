@@ -36,7 +36,7 @@ picto1.style('background-color', 'transparent');
 picto1.style("width", "100px");
 picto1.style('height', '130px');
 picto1.style('border', 'none');
-
+picto1.mouseClicked(goTo1);
 
 
 picto2 = createButton('');
@@ -48,7 +48,6 @@ picto2.style('background-color', 'transparent');
 picto2.style("width", "100px");
 picto2.style('height', '130px')
 picto2.style('border', 'none');
-picto2.mouseClicked(goTo1);
 
 
 picto3 = createButton('');
@@ -60,7 +59,7 @@ picto3.style('background-color', 'transparent');
 picto3.style("width", "100px");
 picto3.style('height', '130px')
 picto3.style('border', 'none');
-picto2.mouseClicked(goTo2);
+picto3.mouseClicked(goTo2)
 
 
 
@@ -143,8 +142,6 @@ function draw() {
   HTMLcontext.filter = 'blur(12px)';
   HTMLcontext.drawImage(real_canvas, 0, 0);
 
-
-
 }
 
 function mousePressed() {
@@ -164,18 +161,17 @@ let sketch = function(p) {
     cnv2.style('position', 'absolute')
 
 
-
   }
 
   p.draw = function() {
 
-home = p.image(pic4, 30, 900, 90, 90);
-nucleo = p.image(pic11, 160, 900, 90, 90);
+home = p.image(pic10, 30, 900, 90, 90);
+nucleo = p.image(pic5, 160, 900, 90, 90);
 attivita = p.image(pic7, 290, 900, 90, 90);
 
 
 p.textFont(myFont);
-p.textSize(70);
+p.textSize(40);
 p.fill('white');
 
 nome = p.text('SILVIA', 30, 50)
@@ -184,23 +180,21 @@ data = p.text('30/11/2020', 2100, 50);
 
 indicatore = p.text('HOME', 2180, 1025);
 
-// p.textSize(24);
+p.textSize(24);
 
 picto1 = p.text('Home', 40, 1025);
 picto2 = p.text('Nucleo', 165, 1025);
 picto3 = p.text('Attività', 295, 1025);
 
 
-
   }
-  window.requestAnimationFrame(draw);
 }
 
 let p = new p5(sketch);
 
 
 function goTo1() {
-   window.open('index2.html', '_self')
+   window.open('index.html', '_self')
 }
 
 function goTo2() {
