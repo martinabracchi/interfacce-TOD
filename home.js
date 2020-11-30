@@ -25,7 +25,7 @@ function preload() {
 }
 
 function setup() {
-frameRate(6s00);
+frameRate(600);
 }
 
 function draw() {
